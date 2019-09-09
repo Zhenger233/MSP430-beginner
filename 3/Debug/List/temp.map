@@ -1,0 +1,2095 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.4.6.89                                          #
+#                                                                              #
+#           Link time     =  03/Jun/2019  19:06:42                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  D:\word\1PH\电子设计\实验三\Debug\List\temp.map   #
+#           Output file 1 =  D:\word\1PH\电子设计\实验三\Debug\Exe\temp.d43    #
+#                            Format: ubrof10                                   #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  -f                                                #
+#                            C:\Users\Zhenger\AppData\Local\Temp\EW7BBC.tmp    #
+#                            (D:\word\1PH\电子设计\实验三\Debug\Obj\main.r43   #
+#                            -o                                                #
+#                            D:\word\1PH\电子设计\实验三\Debug\Exe\temp.d43    #
+#                            -l                                                #
+#                            D:\word\1PH\电子设计\实验三\Debug\List\temp.map   #
+#                            -xms                                              #
+#                            "-ID:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 8.0\430\LIB\"                             #
+#                            -f                                                #
+#                            "D:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.0\430\config\linker\lnk430f5529.xcl"      #
+#                            (-cmsp430 -D?CPU30_OFFSET=2 -QCODE_I=CODE_ID      #
+#                            -QTLS16_I=TLS16_ID -D__iar_HWMUL=4C0              #
+#                            -Z(CONST)INFO=1800-19FF                           #
+#                            -Z(CONST)INFOA=1980-19FF                          #
+#                            -Z(CONST)INFOB=1900-197F                          #
+#                            -Z(CONST)INFOC=1880-18FF                          #
+#                            -Z(CONST)INFOD=1800-187F                          #
+#                            -Z(DATA)USBRAM=1C00-23FF                          #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,TLS16_I=2400-4 #
+#                            3FF                                               #
+#                            -Z(DATA)DATA16_HEAP+_DATA16_HEAP_SIZE             #
+#                            -Z(DATA)CODE_I                                    #
+#                            -Z(DATA)DATA20_I,DATA20_Z,DATA20_N,DATA20_HEAP+_D #
+#                            ATA20_HEAP_SIZE                                   #
+#                            -Z(DATA)CSTACK+_STACK_SIZE#                       #
+#                            -Z(CONST)DATA16_C,DATA16_ID,TLS16_ID,DIFUNCT,CHEC #
+#                            KSUM=4400-FF7F                                    #
+#                            -Z(CODE)CSTART,ISR_CODE,CODE16=4400-FF7F          #
+#                            -P(CODE)CODE=4400-FF7F,10000-243FF                #
+#                            -Z(CONST)DATA20_C,DATA20_ID,CODE_ID=4400-FF7F,100 #
+#                            40-243FF                                          #
+#                            -Z(CODE)INTVEC=FF80-FFFF                          #
+#                            -Z(CODE)RESET=FFFE-FFFF) -f                       #
+#                            "D:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.0\430\config\linker\multiplier32.xcl"     #
+#                            (-e?Mul8Hw=?Mul8 -e?Mul16Hw=?Mul16                #
+#                            -e?Mul16to32uHw=?Mul16to32u                       #
+#                            -e?Mul16to32sHw=?Mul16to32s -e?Mul32Hw32=?Mul32   #
+#                            -e?Mul64Hw32=_Mul64i                              #
+#                            -e?Mul32u32uto64iHw32=_Mul32u32uto64i             #
+#                            -e?Mul32fHw32=_Mul32f                             #
+#                            -e_Mul64fHw32Ptr=_Mul64fPtr) -D_STACK_SIZE=A0     #
+#                            -rt                                               #
+#                            "D:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.0\430\lib\dlib\dl430xlsfn.r43"            #
+#                            -e_PrintfLarge=_Printf -e_ScanfLarge=_Scanf       #
+#                            -D_DATA16_HEAP_SIZE=A0 -s __program_start         #
+#                            -D_DATA20_HEAP_SIZE=50)                           #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           58EA  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __code_model               = large
+  __core                     = 430X
+  __data_model               = small
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0050 
+           _DATA16_HEAP_SIZE       00A0 
+           _STACK_SIZE             00A0 
+           __iar_HWMUL             04C0            ?Mul32fHw32 (?Mul32fHw32)
+                                                   ?Mul64Hw32 (?Mul64Hw32)
+                                                   LCD_ShowNum (main)
+                                                   dmp_set_accel_bias (main)
+                                                   dmp_set_gyro_bias (main)
+                                                   dmp_set_shake_reject_thresh (main)
+                                                   oled_pow (main)
+                                                   run_self_test (main)
+           ?CPU30_OFFSET           0002 
+    *************************************************************************
+
+  FILE NAME : D:\word\1PH\电子设计\实验三\Debug\Obj\main.r43
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0200 - 0201 (0x2 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   PORT1_ISR
+                                                   PORT2_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIN_L               0200 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIN                    0200 
+           PAIN_H                  0201 
+           PAIN_L                  0200 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0202 - 0203 (0x2 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   Key_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAOUT_L              0202 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAOUT                   0202 
+           PAOUT_H                 0203 
+           PAOUT_L                 0202 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0204 - 0205 (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   Key_Init
+                                                   PORT1_ISR
+                                                   PORT2_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PADIR_L              0204 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PADIR                   0204 
+           PADIR_H                 0205 
+           PADIR_L                 0204 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0206 - 0207 (0x2 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   Key_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAREN_L              0206 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAREN                   0206 
+           PAREN_H                 0207 
+           PAREN_L                 0206 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0218 - 0219 (0x2 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   Key_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIES_L              0218 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIES                   0218 
+           PAIES_H                 0219 
+           PAIES_L                 0218 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 021A - 021B (0x2 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   Key_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIE_L               021A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIE                    021A 
+           PAIE_H                  021B 
+           PAIE_L                  021A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 021C - 021D (0x2 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   PORT1_ISR
+                                                   PORT2_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIFG_L              021C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIFG                   021C 
+           PAIFG_H                 021D 
+           PAIFG_L                 021C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 022A - 022B (0x2 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   IIC_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PBSEL_L              022A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PBSEL                   022A 
+           PBSEL_H                 022B 
+           PBSEL_L                 022A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0242 - 0243 (0x2 bytes), align: 0
+  Segment part 9. ROOT        Intra module refs:   IIC_start
+                                                   IIC_stop
+                                                   IIC_writebyte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCOUT_L              0242 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCOUT                   0242 
+           PCOUT_H                 0243 
+           PCOUT_L                 0242 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0244 - 0245 (0x2 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   IIC_ioinit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCDIR_L              0244 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCDIR                   0244 
+           PCDIR_H                 0245 
+           PCDIR_L                 0244 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0246 - 0247 (0x2 bytes), align: 0
+  Segment part 11. ROOT       Intra module refs:   IIC_ioinit
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCREN_L              0246 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCREN                   0246 
+           PCREN_H                 0247 
+           PCREN_L                 0246 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05E0 - 05E1 (0x2 bytes), align: 0
+  Segment part 12. ROOT       Intra module refs:   IIC_Init
+                                                   MPU_Read_Byte
+                                                   MPU_Read_Len
+                                                   MPU_Write_Byte
+                                                   MPU_Write_Len
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCB0CTLW0_L          05E0 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCB0CTLW0               05E0 
+           UCB0CTLW0_H             05E1 
+           UCB0CTLW0_L             05E0 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05E6 - 05E7 (0x2 bytes), align: 0
+  Segment part 13. ROOT       Intra module refs:   IIC_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCB0BRW_L            05E6 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCB0BRW                 05E6 
+           UCB0BRW_H               05E7 
+           UCB0BRW_L               05E6 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05EC - 05EC (0x1 bytes), align: 0
+  Segment part 14. ROOT       Intra module refs:   MPU_Read_Byte
+                                                   MPU_Read_Len
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UCB0RXBUF               05EC 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05EE - 05EE (0x1 bytes), align: 0
+  Segment part 15. ROOT       Intra module refs:   MPU_Read_Byte
+                                                   MPU_Read_Len
+                                                   MPU_Write_Byte
+                                                   MPU_Write_Len
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UCB0TXBUF               05EE 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05F2 - 05F3 (0x2 bytes), align: 0
+  Segment part 16. ROOT       Intra module refs:   IIC_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCB0I2CSA_L          05F2 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCB0I2CSA               05F2 
+           UCB0I2CSA_H             05F3 
+           UCB0I2CSA_L             05F2 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 05FC - 05FD (0x2 bytes), align: 0
+  Segment part 17. ROOT       Intra module refs:   MPU_Read_Byte
+                                                   MPU_Read_Len
+                                                   MPU_Write_Byte
+                                                   MPU_Write_Len
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCB0ICTL_L           05FC 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCB0ICTL                05FC 
+           UCB0ICTL_H              05FD 
+           UCB0ICTL_L              05FC 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 015C - 015D (0x2 bytes), align: 0
+  Segment part 18. ROOT       Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_WDTCTL_L             015C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           WDTCTL                  015C 
+           WDTCTL_H                015D 
+           WDTCTL_L                015C 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4456 - 4458 (0x3 bytes), align: 0
+  Segment part 26.            Intra module refs:   dmp_set_orientation
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4459 - 445B (0x3 bytes), align: 0
+  Segment part 27.            Intra module refs:   dmp_set_orientation
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 445C - 445E (0x3 bytes), align: 0
+  Segment part 28.            Intra module refs:   dmp_set_orientation
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 445F - 4461 (0x3 bytes), align: 0
+  Segment part 29.            Intra module refs:   dmp_set_orientation
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4462 - 446D (0xc bytes), align: 0
+  Segment part 30.            Intra module refs:   dmp_set_fifo_rate
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 446E - 4476 (0x9 bytes), align: 0
+  Segment part 31.            Intra module refs:   dmp_enable_gyro_cal
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4477 - 447F (0x9 bytes), align: 0
+  Segment part 32.            Intra module refs:   dmp_enable_gyro_cal
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4480 - 46A7 (0x228 bytes), align: 0
+  Segment part 35.            Intra module refs:   LCD_ShowChar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           F6x8                    4480 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 46A8 - 4C97 (0x5f0 bytes), align: 0
+  Segment part 36.            Intra module refs:   LCD_ShowChar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           F8X16                   46A8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F14 - 9F21 (0xe bytes), align: 1
+  Segment part 66.            Intra module refs:   LCD_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_ioinit              9F14 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E3C - 9E51 (0x16 bytes), align: 1
+  Segment part 67.            Intra module refs:   IIC_writecmd
+                                                   IIC_writedata
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_start               9E3C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E26 - 9E3B (0x16 bytes), align: 1
+  Segment part 68.            Intra module refs:   IIC_writecmd
+                                                   IIC_writedata
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_stop                9E26 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A3E - 9A73 (0x36 bytes), align: 1
+  Segment part 69.            Intra module refs:   IIC_writecmd
+                                                   IIC_writedata
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_writebyte           9A3E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9DB8 - 9DD5 (0x1e bytes), align: 1
+  Segment part 70.            Intra module refs:   LCD_CLS
+                                                   LCD_Init
+                                                   LCD_Set_Pos
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_writecmd            9DB8 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9D7A - 9D99 (0x20 bytes), align: 1
+  Segment part 71.            Intra module refs:   LCD_CLS
+                                                   LCD_ShowChar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_writedata           9D7A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9C5A - 9C85 (0x2c bytes), align: 1
+  Segment part 72.            Intra module refs:   LCD_Init
+                                                   LCD_ShowChar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_Set_Pos             9C5A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9990 - 99C9 (0x3a bytes), align: 1
+  Segment part 73.            Intra module refs:   LCD_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_CLS                 9990 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 825E - 8349 (0xec bytes), align: 1
+  Segment part 74.            Intra module refs:   PORT2_ISR
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_Init                825E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8B4E - 8BDF (0x92 bytes), align: 1
+  Segment part 75.            Intra module refs:   LCD_ShowFloat
+                                                   LCD_ShowNum
+                                                   LCD_ShowShort
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_ShowChar            8B4E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 99CA - 9A03 (0x3a bytes), align: 1
+  Segment part 77.            Intra module refs:   LCD_ShowNum
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           oled_pow                99CA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8E0A - 8E8F (0x86 bytes), align: 1
+  Segment part 78.            Intra module refs:   LCD_ShowFloat
+                                                   LCD_ShowShort
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_ShowNum             8E0A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9B0C - 9B3D (0x32 bytes), align: 1
+  Segment part 79.            Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Init                9B0C 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4C98 - 4CB2 (0x1b bytes), align: 0
+  Segment part 39.            Intra module refs:   Segment part 43
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           reg                     4C98 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4400 - 440B (0xc bytes), align: 1
+  Segment part 40.            Intra module refs:   Segment part 43
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           hw                      4400 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 440C - 4433 (0x28 bytes), align: 1
+  Segment part 41.            Intra module refs:   Segment part 43
+                                                   accel_self_test
+                                                   get_st_biases
+                                                   gyro_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           test                    440C 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2400 - 2425 (0x26 bytes), align: 1
+  Segment part 42.            Intra module refs:   get_accel_prod_shift
+                                                   get_st_biases
+                                                   gyro_self_test
+                                                   mpu_configure_fifo
+                                                   mpu_get_accel_fsr
+                                                   mpu_get_accel_sens
+                                                   mpu_get_fifo_config
+                                                   mpu_get_gyro_fsr
+                                                   mpu_get_gyro_sens
+                                                   mpu_get_lpf
+                                                   mpu_get_sample_rate
+                                                   mpu_load_firmware
+                                                   mpu_lp_accel_mode
+                                                   mpu_read_mem
+                                                   mpu_reset_fifo
+                                                   mpu_run_self_test
+                                                   mpu_set_accel_fsr
+                                                   mpu_set_bypass
+                                                   mpu_set_dmp_state
+                                                   mpu_set_gyro_fsr
+                                                   mpu_set_int_latched
+                                                   mpu_set_lpf
+                                                   mpu_set_sample_rate
+                                                   mpu_set_sensors
+                                                   mpu_write_mem
+                                                   set_int_enable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           st                      2400 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8D82 - 8E09 (0x88 bytes), align: 1
+  Segment part 80.            Intra module refs:   mpu_configure_fifo
+                                                   mpu_set_dmp_state
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           set_int_enable          8D82 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8432 - 8517 (0xe6 bytes), align: 1
+  Segment part 89.            Intra module refs:   mpu_set_sample_rate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_lp_accel_mode       8432 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 6E4A - 701B (0x1d2 bytes), align: 1
+  Segment part 95.            Intra module refs:   dmp_enable_6x_lp_quat
+                                                   dmp_enable_feature
+                                                   dmp_enable_lp_quat
+                                                   mpu_configure_fifo
+                                                   mpu_set_dmp_state
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_reset_fifo          6E4A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9914 - 9951 (0x3e bytes), align: 1
+  Segment part 96.            Intra module refs:   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_gyro_fsr        9914 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8F14 - 8F95 (0x82 bytes), align: 1
+  Segment part 97.            Intra module refs:   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_gyro_fsr        8F14 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9894 - 98D3 (0x40 bytes), align: 1
+  Segment part 98.            Intra module refs:   dmp_set_tap_thresh
+                                                   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_accel_fsr       9894 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9016 - 908F (0x7a bytes), align: 1
+  Segment part 99.            Intra module refs:   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_accel_fsr       9016 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 948E - 94E3 (0x56 bytes), align: 1
+  Segment part 100.           Intra module refs:   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_lpf             948E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8E90 - 8F13 (0x84 bytes), align: 1
+  Segment part 88.            Intra module refs:   mpu_lp_accel_mode
+                                                   mpu_run_self_test
+                                                   mpu_set_sample_rate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_lpf             8E90 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E66 - 9E79 (0x14 bytes), align: 1
+  Segment part 101.           Intra module refs:   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_sample_rate     9E66 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 883C - 88DF (0xa4 bytes), align: 1
+  Segment part 102.           Intra module refs:   mpu_dmp_init
+                                                   mpu_run_self_test
+                                                   mpu_set_dmp_state
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_sample_rate     883C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9536 - 9585 (0x50 bytes), align: 1
+  Segment part 105.           Intra module refs:   run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_gyro_sens       9536 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 966C - 96B5 (0x4a bytes), align: 1
+  Segment part 106.           Intra module refs:   dmp_set_accel_bias
+                                                   run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_accel_sens      966C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F46 - 9F4F (0xa bytes), align: 1
+  Segment part 107.           Intra module refs:   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_get_fifo_config     9F46 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9256 - 92BD (0x68 bytes), align: 1
+  Segment part 87.            Intra module refs:   mpu_dmp_init
+                                                   mpu_lp_accel_mode
+                                                   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_configure_fifo      9256 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 86BC - 877D (0xc2 bytes), align: 1
+  Segment part 85.            Intra module refs:   mpu_dmp_init
+                                                   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_sensors         86BC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 77B8 - 78EF (0x138 bytes), align: 1
+  Segment part 112.           Intra module refs:   mpu_set_dmp_state
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_bypass          77B8 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9326 - 9385 (0x60 bytes), align: 1
+  Segment part 84.            Intra module refs:   mpu_lp_accel_mode
+                                                   mpu_set_sensors
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_int_latched     9326 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7E92 - 7F8D (0xfc bytes), align: 1
+  Segment part 114.           Intra module refs:   accel_self_test
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           get_accel_prod_shift    7E92 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7F8E - 8083 (0xf6 bytes), align: 1
+  Segment part 115.           Intra module refs:   mpu_run_self_test
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           accel_self_test         7F8E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7664 - 77B7 (0x154 bytes), align: 1
+  Segment part 116.           Intra module refs:   mpu_run_self_test
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gyro_self_test          7664 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 616E - 6707 (0x59a bytes), align: 1
+  Segment part 117.           Intra module refs:   mpu_run_self_test
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           get_st_biases           616E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7B4A - 7C69 (0x120 bytes), align: 1
+  Segment part 120.           Intra module refs:   run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_run_self_test       7B4A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8C6E - 8CF7 (0x8a bytes), align: 1
+  Segment part 121.           Intra module refs:   dmp_enable_6x_lp_quat
+                                                   dmp_enable_feature
+                                                   dmp_enable_gyro_cal
+                                                   dmp_enable_lp_quat
+                                                   dmp_set_accel_bias
+                                                   dmp_set_fifo_rate
+                                                   dmp_set_gyro_bias
+                                                   dmp_set_orientation
+                                                   dmp_set_shake_reject_thresh
+                                                   dmp_set_shake_reject_time
+                                                   dmp_set_shake_reject_timeout
+                                                   dmp_set_tap_axes
+                                                   dmp_set_tap_count
+                                                   dmp_set_tap_thresh
+                                                   dmp_set_tap_time
+                                                   dmp_set_tap_time_multi
+                                                   mpu_load_firmware
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_write_mem           8C6E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8CF8 - 8D81 (0x8a bytes), align: 1
+  Segment part 122.           Intra module refs:   mpu_load_firmware
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_read_mem            8CF8 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 877E - 883B (0xbe bytes), align: 1
+  Segment part 123.           Intra module refs:   dmp_load_motion_driver_firmware
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_load_firmware       877E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8F96 - 9015 (0x80 bytes), align: 1
+  Segment part 119.           Intra module refs:   mpu_dmp_init
+                                                   mpu_run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_set_dmp_state       8F96 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2436 - 243E (0x9 bytes), align: 0
+  Segment part 44.            Intra module refs:   mpu_dmp_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           gyro_orientation        2436 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7A20 - 7B49 (0x12a bytes), align: 1
+  Segment part 131.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           run_self_test           7A20 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9C2E - 9C59 (0x2c bytes), align: 1
+  Segment part 133.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           inv_orientation_matrix_to_scalar
+                                   9C2E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 96B6 - 96FB (0x46 bytes), align: 1
+  Segment part 132.           Intra module refs:   inv_orientation_matrix_to_scalar
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           inv_row_2_scale         96B6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8172 - 825D (0xec bytes), align: 1
+  Segment part 134.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mpu_dmp_init            8172 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4CB3 - 58A8 (0xbf6 bytes), align: 0
+  Segment part 46.            Intra module refs:   dmp_load_motion_driver_firmware
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           dmp_memory              4CB3 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 4434 - 4435 (0x2 bytes), align: 1
+  Segment part 47.            Intra module refs:   dmp_load_motion_driver_firmware
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           sStartAddress           4434 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2440 - 244F (0x10 bytes), align: 1
+  Segment part 48.            Intra module refs:   dmp_enable_feature
+                                                   dmp_set_accel_bias
+                                                   dmp_set_fifo_rate
+                                                   dmp_set_gyro_bias
+                                                   dmp_set_orientation
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           dmp                     2440 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E7A - 9E8D (0x14 bytes), align: 1
+  Segment part 136.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_load_motion_driver_firmware
+                                   9E7A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 738C - 74FF (0x174 bytes), align: 1
+  Segment part 137.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_orientation     738C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 6708 - 69B1 (0x2aa bytes), align: 1
+  Segment part 130.           Intra module refs:   run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_gyro_bias       6708 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 69B2 - 6C23 (0x272 bytes), align: 1
+  Segment part 129.           Intra module refs:   run_self_test
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_accel_bias      69B2 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9090 - 9107 (0x78 bytes), align: 1
+  Segment part 138.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_fifo_rate       9090 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 71EA - 738B (0x1a2 bytes), align: 1
+  Segment part 140.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_tap_thresh      71EA 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A74 - 9AA7 (0x34 bytes), align: 1
+  Segment part 141.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_tap_axes        9A74 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9D2E - 9D55 (0x28 bytes), align: 1
+  Segment part 142.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_tap_count       9D2E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9C86 - 9CAF (0x2a bytes), align: 1
+  Segment part 143.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_tap_time        9C86 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9CB0 - 9CD9 (0x2a bytes), align: 1
+  Segment part 144.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_tap_time_multi
+                                   9CB0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 92BE - 9325 (0x68 bytes), align: 1
+  Segment part 145.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_shake_reject_thresh
+                                   92BE 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9D04 - 9D2D (0x2a bytes), align: 1
+  Segment part 146.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_shake_reject_time
+                                   9D04 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9CDA - 9D03 (0x2a bytes), align: 1
+  Segment part 147.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_set_shake_reject_timeout
+                                   9CDA 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 6C24 - 6E49 (0x226 bytes), align: 1
+  Segment part 155.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_enable_feature      6C24 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9586 - 95D5 (0x50 bytes), align: 1
+  Segment part 154.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_enable_gyro_cal     9586 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9788 - 97CB (0x44 bytes), align: 1
+  Segment part 153.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_enable_lp_quat      9788 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9810 - 9853 (0x44 bytes), align: 1
+  Segment part 152.           Intra module refs:   dmp_enable_feature
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           dmp_enable_6x_lp_quat   9810 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E0C - 9E25 (0x1a bytes), align: 1
+  Segment part 83.            Intra module refs:   MPU_Init
+                                                   get_st_biases
+                                                   mpu_reset_fifo
+                                                   mpu_set_bypass
+                                                   mpu_set_sensors
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Delay_ms                9E0C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8A24 - 8ABB (0x98 bytes), align: 1
+  Segment part 166.           Intra module refs:   mpu_dmp_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Init                8A24 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 97CC - 980F (0x44 bytes), align: 1
+  Segment part 164.           Intra module refs:   MPU_Set_Rate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Set_LPF             97CC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9854 - 9893 (0x40 bytes), align: 1
+  Segment part 165.           Intra module refs:   MPU_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Set_Rate            9854 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9952 - 998F (0x3e bytes), align: 1
+  Segment part 163.           Intra module refs:   MPU_Init
+                                                   MPU_Set_LPF
+                                                   MPU_Set_Rate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Write_Byte          9952 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9742 - 9787 (0x46 bytes), align: 1
+  Segment part 162.           Intra module refs:   MPU_Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Read_Byte           9742 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9622 - 966B (0x4a bytes), align: 1
+  Segment part 118.           Intra module refs:   get_st_biases
+                                                   mpu_load_firmware
+                                                   mpu_lp_accel_mode
+                                                   mpu_read_mem
+                                                   mpu_reset_fifo
+                                                   mpu_set_accel_fsr
+                                                   mpu_set_bypass
+                                                   mpu_set_dmp_state
+                                                   mpu_set_gyro_fsr
+                                                   mpu_set_int_latched
+                                                   mpu_set_lpf
+                                                   mpu_set_sample_rate
+                                                   mpu_set_sensors
+                                                   mpu_write_mem
+                                                   set_int_enable
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Write_Len           9622 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 91E8 - 9255 (0x6e bytes), align: 1
+  Segment part 167.           Intra module refs:   MPU_Get_Accelerometer
+                                                   MPU_Get_Gyroscope
+                                                   MPU_Get_Temperature
+                                                   get_accel_prod_shift
+                                                   get_st_biases
+                                                   gyro_self_test
+                                                   mpu_read_mem
+                                                   mpu_set_bypass
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Read_Len            91E8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9386 - 93DF (0x5a bytes), align: 1
+  Segment part 168.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Get_Temperature     9386 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9178 - 91E7 (0x70 bytes), align: 1
+  Segment part 169.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Get_Accelerometer   9178 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9108 - 9177 (0x70 bytes), align: 1
+  Segment part 170.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MPU_Get_Gyroscope       9108 
+               calls direct
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2426 - 2429 (0x4 bytes), align: 1
+  Segment part 49.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           q0                      2426 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2450 - 2453 (0x4 bytes), align: 1
+  Segment part 51.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           q1                      2450 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2454 - 2457 (0x4 bytes), align: 1
+  Segment part 52.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           q2                      2454 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2458 - 245B (0x4 bytes), align: 1
+  Segment part 53.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           q3                      2458 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 242A - 242D (0x4 bytes), align: 1
+  Segment part 54.            Intra module refs:   IMUupdate
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           p                       242A 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 242E - 2431 (0x4 bytes), align: 1
+  Segment part 56.            Intra module refs:   IMUupdate
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           r                       242E 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2432 - 2435 (0x4 bytes), align: 1
+  Segment part 58.            Intra module refs:   IMUupdate
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           y                       2432 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 245C - 245F (0x4 bytes), align: 1
+  Segment part 60.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exInt                   245C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2460 - 2463 (0x4 bytes), align: 1
+  Segment part 61.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           eyInt                   2460 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2464 - 2467 (0x4 bytes), align: 1
+  Segment part 62.            Intra module refs:   IMUupdate
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ezInt                   2464 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 2468 - 2469 (0x2 bytes), align: 1
+  Segment part 63.            Intra module refs:   PORT1_ISR
+                                                   PORT2_ISR
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           flag                    2468 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 246A - 246B (0x2 bytes), align: 1
+  Segment part 64.            Intra module refs:   PORT1_ISR
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rightdown               246A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8518 - 85EB (0xd4 bytes), align: 1
+  Segment part 171.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_ShowFloat           8518 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 85EC - 86BB (0xd0 bytes), align: 1
+  Segment part 172.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LCD_ShowShort           85EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9C00 - 9C2D (0x2e bytes), align: 1
+  Segment part 173.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Key_Init                9C00 
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 5912 - 5943 (0x32 bytes), align: 1
+  Segment part 176.           Intra module refs:   PORT1_ISR::??INTVEC 94
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PORT1_ISR               5912 
+               interrupt function
+    -------------------------------------------------------------------------
+ISR_CODE
+  Relative segment, address: 5944 - 5975 (0x32 bytes), align: 1
+  Segment part 177.           Intra module refs:   PORT2_ISR::??INTVEC 84
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PORT2_ISR               5944 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 701C - 71E9 (0x1ce bytes), align: 1
+  Segment part 175.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    701C            Segment part 26 (?cstart)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 5976 - 616D (0x7f8 bytes), align: 1
+  Segment part 174.           Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IMUupdate               5976 
+               calls direct
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFD5 (0x56 bytes), align: 1
+  Segment part 19. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PORT2_ISR::??INTVEC 84
+                                   FFD4 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: FF80 - FFDF (0x60 bytes), align: 1
+  Segment part 20. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PORT1_ISR::??INTVEC 94
+                                   FFDE 
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58AA - 58CF (0x26 bytes), align: 1
+  Segment part 43.            Intra module refs:   st
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58E0 - 58E8 (0x9 bytes), align: 0
+  Segment part 45.            Intra module refs:   gyro_orientation
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58D0 - 58D3 (0x4 bytes), align: 1
+  Segment part 50.            Intra module refs:   q0
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58D4 - 58D7 (0x4 bytes), align: 1
+  Segment part 55.            Intra module refs:   p
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58D8 - 58DB (0x4 bytes), align: 1
+  Segment part 57.            Intra module refs:   r
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58DC - 58DF (0x4 bytes), align: 1
+  Segment part 59.            Intra module refs:   y
+
+    *************************************************************************
+
+  FILE NAME : D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\430\lib\dlib\dl430xlsfn.r43
+  LIBRARY MODULE, NAME : ?__dbg_break
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F66 - 9F67 (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak            9F66            __exit (?__exit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E8E - 9EA1 (0x14 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  9E8E            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?asin
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 88E0 - 8981 (0xa2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           asin                    88E0            IMUupdate (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F3A - 9F45 (0xc bytes), align: 1
+  Segment part 3.             Intra module refs:   asin
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F2E - 9F39 (0xc bytes), align: 1
+  Segment part 4.             Intra module refs:   asin
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?atan2
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 834A - 8431 (0xe8 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           atan2                   834A            IMUupdate (main)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F5A, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   9F5A            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F5A - 9F5D (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 4360, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 246C, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 2436, align: 1
+  Segment part 3.
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 58E0, align: 1
+  Segment part 4.
+    -------------------------------------------------------------------------
+CODE_I
+  Relative segment, address: 246E, align: 1
+  Segment part 5.
+    -------------------------------------------------------------------------
+CODE_ID
+  Relative segment, address: 9F68, align: 1
+  Segment part 6.
+    -------------------------------------------------------------------------
+DATA20_Z
+  Relative segment, address: 246E, align: 1
+  Segment part 7.
+    -------------------------------------------------------------------------
+DATA20_I
+  Relative segment, address: 246E, align: 1
+  Segment part 8.
+    -------------------------------------------------------------------------
+DATA20_ID
+  Relative segment, address: 9F68, align: 1
+  Segment part 9.
+    -------------------------------------------------------------------------
+DATA20_C
+  Relative segment, address: 9F68, align: 1
+  Segment part 10.
+    -------------------------------------------------------------------------
+DATA20_N
+  Relative segment, address: 246E, align: 1
+  Segment part 12.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 58EA - 58ED (0x4 bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         58EA            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+           ?cstart_begin           58EA 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 58EE - 58F9 (0xc bytes), align: 1
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       58EE            __iar_Errno (?errno)
+                                                   dmp (main)
+                                                   exInt (main)
+                                                   eyInt (main)
+                                                   ezInt (main)
+                                                   flag (main)
+                                                   q1 (main)
+                                                   q2 (main)
+                                                   q3 (main)
+                                                   rightdown (main)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 58FA - 5909 (0x10 bytes), align: 1
+  Segment part 20.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_copy       58FA            gyro_orientation (main)
+                                                   p (main)
+                                                   q0 (main)
+                                                   r (main)
+                                                   st (main)
+                                                   y (main)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 590A - 5911 (0x8 bytes), align: 1
+  Segment part 26.            Intra module refs:   Segment part 15
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       590A 
+           ?cstart_end             5912 
+    -------------------------------------------------------------------------
+CODE_ID
+  Relative segment, address: 9F68, align: 1
+  Segment part 27.            Intra module refs:   Segment part 5
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFFE - FFFF (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFFE            Segment part 15 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?div64i
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 8982 - 8A23 (0xa2 bytes), align: 1
+  Segment part 2.             Intra module refs:   _Div64s
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div64u                 8982 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A04 - 9A21 (0x1e bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div64s                 9A04            get_st_biases (main)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A22 - 9A2B (0xa bytes), align: 1
+  Segment part 6.             Intra module refs:   _Div64s
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9A2C - 9A3D (0x12 bytes), align: 1
+  Segment part 8.             Intra module refs:   _Div64s
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9EC6 - 9ED7 (0x12 bytes), align: 1
+  Segment part 9.             Intra module refs:   Segment part 6
+                                                   _Div64s
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9DF2 - 9E0B (0x1a bytes), align: 1
+  Segment part 4.             Intra module refs:   _Div64u
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?errno
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_Z
+  Relative segment, address: 246C - 246D (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Errno             246C            asin (?asin)
+                                                   sqrt (?sqrt)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F5E - 9F61 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    9F5E            Segment part 26 (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?fabsf
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9ADA - 9B0B (0x32 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           fabsf                   9ADA            accel_self_test (main)
+                                                   gyro_self_test (main)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul32fHw32
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 7C6A - 7D7F (0x116 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul32fHw32             7C6A            IMUupdate (main)
+                                                   LCD_ShowFloat (main)
+                                                   __iar_Atan (?xatan)
+                                                   asin (?asin)
+                                                   dmp_set_tap_thresh (main)
+                                                   get_accel_prod_shift (main)
+                                                   gyro_self_test (main)
+                                                   run_self_test (main)
+                                                   sqrt (?sqrt)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Cast32f32i
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 8ABC - 8ACF (0x14 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32sto32f           8ABC            LCD_ShowFloat (main)
+                                                   MPU_Get_Temperature (main)
+                                                   accel_self_test (main)
+                                                   gyro_self_test (main)
+                                                   main (main)
+                                                   run_self_test (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 8AD0 - 8B4D (0x7e bytes), align: 1
+  Segment part 1.             Intra module refs:   _Cast32sto32f
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32uto32f           8AD0            dmp_set_tap_thresh (main)
+                                                   gyro_self_test (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Cast32fto32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F22 - 9F2D (0xc bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32fto32u           9F22            LCD_ShowFloat (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Cast32fto32s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9B3E - 9B6F (0x32 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Cast32fto32s           9B3E            LCD_ShowFloat (main)
+                                                   MPU_Get_Temperature (main)
+                                                   dmp_set_tap_thresh (main)
+                                                   run_self_test (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_Extract
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 95D6 - 9621 (0x4c bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_Extract            95D6            _Cast32fto32s (_Cast32fto32s)
+                                                   _Cast32fto32u (_Cast32fto32u)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_EQ
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9BA0 - 9BCF (0x30 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_EQ                 9BA0            accel_self_test (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_GE
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9438 - 948D (0x56 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_GE                 9438            __iar_Atan (?xatan)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FLT_LT
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 94E4 - 9535 (0x52 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FLT_LT                 94E4            LCD_ShowFloat (main)
+                                                   __iar_Atan (?xatan)
+                                                   accel_self_test (main)
+                                                   asin (?asin)
+                                                   atan2 (?atan2)
+                                                   fabsf (?fabsf)
+                                                   gyro_self_test (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Div32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 78F0 - 7A1F (0x130 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Div32f                 78F0            IMUupdate (main)
+                                                   MPU_Get_Temperature (main)
+                                                   Segment part 5 (?sqrt)
+                                                   __iar_Atan (?xatan)
+                                                   accel_self_test (main)
+                                                   asin (?asin)
+                                                   atan2 (?atan2)
+                                                   dmp_set_tap_thresh (main)
+                                                   gyro_self_test (main)
+                                                   main (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : _Add32f
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 7500 - 7503 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Sub32f                 7500            IMUupdate (main)
+                                                   LCD_ShowFloat (main)
+                                                   Segment part 4 (?asin)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7504 - 7663 (0x160 bytes), align: 1
+  Segment part 1.             Intra module refs:   _Sub32f
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _Add32f                 7504            IMUupdate (main)
+                                                   MPU_Get_Temperature (main)
+                                                   Segment part 3 (?asin)
+                                                   Segment part 4 (?sqrt)
+                                                   __iar_Atan (?xatan)
+                                                   accel_self_test (main)
+                                                   gyro_self_test (main)
+                                                   sqrt (?sqrt)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?labs
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F06 - 9F13 (0xe bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           labs                    9F06            accel_self_test (main)
+                                                   gyro_self_test (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9DD6 - 9DD9 (0x4 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod8u               9DD6            LCD_ShowNum (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9DDA - 9DF1 (0x18 bytes), align: 1
+  Segment part 1.             Intra module refs:   ?DivMod8u
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16u              9DDA            ?DivMod16s (?DivMod816s)
+                                                   MPU_Set_Rate (main)
+                                                   dmp_set_fifo_rate (main)
+                                                   dmp_set_shake_reject_time (main)
+                                                   dmp_set_shake_reject_timeout (main)
+                                                   dmp_set_tap_time (main)
+                                                   dmp_set_tap_time_multi (main)
+                                                   get_st_biases (main)
+                                                   mpu_set_sample_rate (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9BD0 - 9BFF (0x30 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod16s              9BD0            mpu_set_sample_rate (main)
+                                                   sqrt (?sqrt)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9B70 - 9B9F (0x30 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32u              9B70            ?DivMod32s (?DivMod32s)
+                                                   LCD_ShowNum (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod32s
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 98D4 - 9913 (0x40 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod32s              98D4            dmp_set_shake_reject_thresh (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ShiftRight64s_n
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9AA8 - 9AAF (0x8 bytes), align: 1
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight64s_6        9AA8            dmp_set_accel_bias (main)
+                                                   dmp_set_gyro_bias (main)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9AB0 - 9AB7 (0x8 bytes), align: 1
+  Segment part 2.             Intra module refs:   ?ShiftRight64s_6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight64s_5        9AB0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9AB8 - 9ABF (0x8 bytes), align: 1
+  Segment part 3.             Intra module refs:   ?ShiftRight64s_5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight64s_4        9AB8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9AC0 - 9AC7 (0x8 bytes), align: 1
+  Segment part 4.             Intra module refs:   ?ShiftRight64s_4
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight64s_3        9AC0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9AC8 - 9AD9 (0x12 bytes), align: 1
+  Segment part 5.             Intra module refs:   ?ShiftRight64s_3
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ShiftRight64s_2        9AC8 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcmp
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9D9A - 9DB7 (0x1e bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcmp                  9D9A            mpu_load_firmware (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9EA2 - 9EB3 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  9EA2            __data16_memcpy (?memzero)
+                                                   dmp_set_orientation (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?CopyMemoryBytes
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9ED8 - 9EE7 (0x10 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?CopyMemoryBytes        9ED8            dmp_enable_gyro_cal (main)
+                                                   dmp_set_fifo_rate (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memset
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9EB4 - 9EC5 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memset                  9EB4            dmp_enable_6x_lp_quat (main)
+                                                   dmp_enable_lp_quat (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9EE8 - 9EF7 (0x10 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        9EE8            ?cstart_init_zero (?cstart)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F62 - 9F65 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memcpy         9F62            ?cstart_init_copy (?cstart)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?Mul64Hw32
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 93E0 - 9437 (0x58 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Mul64Hw32              93E0            dmp_set_accel_bias (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?sqrt
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 8084 - 8171 (0xee bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sqrt                    8084            IMUupdate (main)
+                                                   asin (?asin)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9F50 - 9F59 (0xa bytes), align: 1
+  Segment part 3.             Intra module refs:   sqrt
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9EF8 - 9F05 (0xe bytes), align: 1
+  Segment part 4.             Intra module refs:   sqrt
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 9E52 - 9E65 (0x14 bytes), align: 1
+  Segment part 5.             Intra module refs:   sqrt
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xatan
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_C
+  Relative segment, address: 4436 - 4455 (0x20 bytes), align: 1
+  Segment part 2.             Intra module refs:   __iar_Atan
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 7D80 - 7E91 (0x112 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Atan              7D80            asin (?asin)
+                                                   atan2 (?atan2)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xdscale
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 8BE0 - 8C6D (0x8e bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Dscale            8BE0            sqrt (?sqrt)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xdtest
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 9D56 - 9D79 (0x24 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Dtest             9D56            atan2 (?atan2)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xdunscal
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 96FC - 9741 (0x46 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __iar_Dunscale          96FC            sqrt (?sqrt)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              015C - 015D               2   rel    0
+                                       0200 - 0207               8 
+                                       0218 - 021D               6 
+                                       022A - 022B               2 
+                                       0242 - 0247               6 
+                                       05E0 - 05E1               2 
+                                       05E6 - 05E7               2 
+                                       05EC - 05EC               1 
+                                       05EE - 05EE               1 
+                                       05F2 - 05F3               2 
+                                       05FC - 05FD               2 
+DATA16_I                               2400 - 243E              3F   rel    1
+DATA16_Z                               2440 - 246D              2E   rel    1
+DATA20_I                                  246E                       rel    1
+DATA20_Z                                  246E                       rel    1
+DATA20_N                                  246E                       rel    1
+CODE_I                                    246E                       rel    1
+CSTACK                                 4360 - 43FF              A0   rel    1
+DATA16_C                               4400 - 58A8            14A9   rel    1
+DATA16_ID                              58AA - 58E8              3F   rel    1
+CSTART                                 58EA - 5911              28   rel    1
+ISR_CODE                               5912 - 5975              64   rel    1
+<CODE> 1                               5976 - 9F67            45F2   rel    1
+DATA20_C                                  9F68                       rel    1
+DATA20_ID                                 9F68                       rel    1
+CODE_ID                                   9F68                       rel    1
+INTVEC                                 FF80 - FFDF              60   com    1
+RESET                                  FFFE - FFFF               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 18 144 bytes of CODE  memory
+    269 bytes of DATA  memory (+ 34 absolute )
+  5 352 bytes of CONST memory
+
+Errors: none
+Warnings: none
+
